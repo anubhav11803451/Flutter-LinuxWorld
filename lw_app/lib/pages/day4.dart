@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Homebody extends StatelessWidget {
-  const Homebody({Key key}) : super(key: key);
-
+class Day4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
