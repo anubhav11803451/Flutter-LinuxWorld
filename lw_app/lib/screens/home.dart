@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lw_app/pages/day10.dart';
 import 'package:lw_app/pages/day8.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -38,7 +39,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
-      body: Homebody2(),
+      body: Day8(),
       // backgroundColor: Color(0xFF15202D),
       backgroundColor: Colors.white,
     );
