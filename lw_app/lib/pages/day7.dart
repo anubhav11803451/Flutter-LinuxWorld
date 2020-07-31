@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Homebody1 extends StatelessWidget {
-  const Homebody1({
+class Day7 extends StatelessWidget {
+  const Day7({
     Key key,
   }) : super(key: key);
 
