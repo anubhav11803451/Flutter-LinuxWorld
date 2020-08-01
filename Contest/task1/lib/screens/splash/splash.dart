@@ -36,7 +36,7 @@ class Splash extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "We promise, you wil have hassel free\nstreaming of music and video",
+                  "We promise, you will have hassel free\nstreaming of music and video",
                   style: GoogleFonts.lato(
                     color: Colors.white54,
                     fontSize: 15.0,
