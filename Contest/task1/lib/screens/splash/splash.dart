@@ -49,8 +49,8 @@ class Splash extends StatelessWidget {
               child: InkWell(
                 child: CircleAvatar(
                   radius: 32.0,
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.black,
+                  backgroundColor: Colors.white30.withOpacity(0.2),
+                  foregroundColor: Colors.white,
                   child: Icon(Icons.arrow_forward_ios),
                 ),
                 onTap: () => Navigator.push(
