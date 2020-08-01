@@ -1,6 +1,6 @@
 # Task 1
 
-Submitted by [Anubhav](https://github.com/anubhav11803451) to [Vimal Daga](https://www.linkedin.com/in/vimaldaga/?originalSubdomain=in)
+Submitted by [Anubhav](https://www.linkedin.com/in/anubhav-gupta-307a3a16b/) to [Vimal Daga](https://www.linkedin.com/in/vimaldaga/?originalSubdomain=in)
 
 ## ❗ Contest Alert ❗
 
