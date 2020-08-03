@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:task1/screens/audio/audio.dart';
+import 'package:task1/screens/audio/offlinlibrary.dart';
+import 'package:task1/screens/audio/onlinlibrary.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -58,7 +59,7 @@ class Homebody extends StatelessWidget {
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (contex) => AudioPlayer(),
+                  builder: (contex) => Onlinelibrary(),
                 ),
               ),
             ),
@@ -83,16 +84,22 @@ class Homebody extends StatelessWidget {
                 ),
               ),
             ),
-            // _divider(),
-            // Align(
-            //   alignment: Alignment.bottomCenter,
-            //   child: InkWell(
-            //     child: Text(
-            //       "Go Offline",
-            //       style: GoogleFonts.lato(color: Colors.white),
-            //     ),
-            //   ),
-            // ),
+            _divider(),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: GestureDetector(
+                child: Text(
+                  "Go Offline",
+                  style: GoogleFonts.lato(color: Colors.white),
+                ),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Offlinelibrary(),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

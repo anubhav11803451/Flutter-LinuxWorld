@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:task1/data/data.dart';
+import 'package:task1/screens/audio/onlineplayer.dart';
 
-class AudioPlayer extends StatelessWidget {
+class Onlinelibrary extends StatelessWidget {
   AppBar appBar(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.black,
@@ -28,6 +29,7 @@ class AudioPlayer extends StatelessWidget {
               Icons.library_music,
               color: Colors.orangeAccent,
             ),
+            iconSize: 28.0,
             tooltip: "My Music",
             onPressed: () {},
           ),
@@ -36,6 +38,7 @@ class AudioPlayer extends StatelessWidget {
               Icons.explore,
               color: Colors.orangeAccent,
             ),
+            iconSize: 28.0,
             onPressed: () {},
           ),
         ],
@@ -74,6 +77,7 @@ class AudioBody extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return SafeArea(
+      minimum: EdgeInsets.symmetric(horizontal: 8.0),
       child: Container(
         height: size.height,
         width: size.width,
@@ -96,45 +100,14 @@ class AudioBody extends StatelessWidget {
   }
 }
 
-class BuildAudioCard extends StatefulWidget {
+class BuildAudioCard extends StatelessWidget {
   final int itemIndex;
   final Data data;
   const BuildAudioCard({
     Key key,
     this.itemIndex,
     this.data,
-  }) : super(key: key);
-
-  @override
-  _BuildAudioCardState createState() => _BuildAudioCardState();
-}
-
-class _BuildAudioCardState extends State<BuildAudioCard>
-    with SingleTickerProviderStateMixin {
-  AnimationController _controller;
-  bool isPlaying = false;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(
-      vsync: this,
-      duration: Duration(seconds: 5),
-    );
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _controller.dispose();
-  }
-
-  void _handleOnPressed() {
-    setState(() {
-      isPlaying = !isPlaying;
-      isPlaying ? _controller.forward() : _controller.reverse();
-    });
-  }
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -142,36 +115,41 @@ class _BuildAudioCardState extends State<BuildAudioCard>
       child: Card(
         margin: EdgeInsets.symmetric(vertical: 8.5),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30.0),
+          borderRadius: BorderRadius.circular(35.0),
         ),
         color: Colors.white30.withOpacity(0.1),
         child: ListTile(
           leading: CircleAvatar(
-            backgroundImage: AssetImage(widget.data.thumb),
+            backgroundColor: Colors.black,
+            backgroundImage: AssetImage(data.thumb),
             radius: 25,
           ),
           title: Text(
-            widget.data.title,
+            data.title,
             style: GoogleFonts.lato(
               color: Colors.white,
               fontStyle: FontStyle.italic,
             ),
           ),
           subtitle: Text(
-            widget.data.artist,
+            data.artist,
             style: GoogleFonts.lato(color: Colors.white54),
           ),
-          trailing: AnimatedIcon(
-            icon: AnimatedIcons.play_pause,
+          trailing: Icon(
+            Icons.play_arrow,
             color: Colors.orangeAccent,
             size: 25.0,
-            progress: _controller,
           ),
         ),
       ),
-      onTap: () {
-        _handleOnPressed();
-      },
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => OnlinePlayer(
+            data: datas[itemIndex],
+          ),
+        ),
+      ),
     );
   }
 }
