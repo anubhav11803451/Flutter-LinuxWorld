@@ -46,9 +46,7 @@ class Splash extends StatelessWidget {
             ),
             SizedBox(height: 20.0),
             Center(
-              child: InkWell(
-                borderRadius: BorderRadius.circular(50.0),
-                splashColor: Colors.white,
+              child: GestureDetector(
                 child: CircleAvatar(
                   radius: 32.0,
                   backgroundColor: Colors.white30.withOpacity(0.12),
