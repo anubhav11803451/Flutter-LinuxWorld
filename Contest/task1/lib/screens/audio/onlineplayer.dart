@@ -113,7 +113,6 @@ class _PlayerState extends State<OnlinePlayer>
                 ),
               ],
             ),
-
             StreamBuilder<FullAudioPlaybackState>(
               stream: _player.fullPlaybackStateStream,
               builder: (context, snapshot) {
@@ -163,20 +162,10 @@ class _PlayerState extends State<OnlinePlayer>
                       color: Colors.orangeAccent,
                       onPressed: () {},
                     ),
-                    // IconButton(
-                    //   icon: Icon(Icons.stop),
-                    //   iconSize: 64.0,
-                    //   color: Colors.orangeAccent,
-                    //   onPressed: state == AudioPlaybackState.stopped ||
-                    //           state == AudioPlaybackState.none
-                    //       ? null
-                    //       : _player.stop,
-                    // ),
                   ],
                 );
               },
             ),
-
             StreamBuilder<double>(
               stream: _volumeSubject.stream,
               builder: (context, snapshot) => Padding(
@@ -205,20 +194,6 @@ class _PlayerState extends State<OnlinePlayer>
                 ),
               ),
             ),
-            // Text("Speed"),
-            // StreamBuilder<double>(
-            //   stream: _speedSubject.stream,
-            //   builder: (context, snapshot) => Slider(
-            //     divisions: 10,
-            //     min: 0.5,
-            //     max: 1.5,
-            //     value: snapshot.data ?? 1.0,
-            //     onChanged: (value) {
-            //       _speedSubject.add(value);
-            //       _player.setSpeed(value);
-            //     },
-            //   ),
-            // ),
           ],
         ),
       ),
