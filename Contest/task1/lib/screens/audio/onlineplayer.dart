@@ -29,10 +29,8 @@ class _PlayerState extends State<OnlinePlayer>
     _colorTween = _animationController
         .drive(ColorTween(begin: Colors.orangeAccent, end: Colors.black));
     _animationController.forward();
-    // AudioPlayer.setIosCategory(IosCategory.playback);
     _player = AudioPlayer();
     _player.setUrl(widget.data.url).then((value) => _player.play());
-    // _player.setAsset(widget.data.asset).then((value) => _player.play());
   }
 
   @override
