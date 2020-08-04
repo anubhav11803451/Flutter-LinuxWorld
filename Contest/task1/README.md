@@ -15,6 +15,10 @@ To boost up the motivation LinuxWorld has come up with a contest.🤩
 4. Also add Features to play audio and video from Internet(Network).
 5. Create buttons like play, pause and stop for audio and video both.
 
+## ShowCase 👀
+
+![Sample](Flutter-LinuxWorld/Contest/task1/screenshots/img1.jpg)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
