@@ -181,7 +181,7 @@ class _PlayerState extends State<OnlinePlayer>
                       label: "Volume",
                       activeColor: Colors.white.withOpacity(0.6),
                       inactiveColor: Colors.white30.withOpacity(0.1),
-                      divisions: 10,
+                      divisions: 20,
                       min: 0.0,
                       max: 2.0,
                       value: snapshot.data ?? 1.0,
