@@ -17,7 +17,7 @@ To boost up the motivation LinuxWorld has come up with a contest.🤩
 
 ## ShowCase 👀
 
-![Sample](Flutter-LinuxWorld/Contest/task1/screenshots/img1.jpg)
+![Sample](/Flutter-LinuxWorld/Contest/task1/screenshots/img1.jpg)
 
 ## Getting Started
 
