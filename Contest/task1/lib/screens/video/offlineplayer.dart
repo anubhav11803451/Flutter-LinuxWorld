@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:task1/data/data.dart';
 import 'package:video_player/video_player.dart';
 
@@ -36,8 +37,12 @@ class _VideoPlayerScreenState extends State<OfflineVideoPlayer> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       backgroundColor: Colors.black,
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: Colors.black,
-        title: Text(widget.video.title),
+        title: Text(
+          widget.video.title,
+          style: GoogleFonts.lato(),
+        ),
       ),
       body: FutureBuilder(
         future: _initializeVideoPlayerFuture,
