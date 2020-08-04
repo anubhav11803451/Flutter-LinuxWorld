@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:task1/screens/audio/onlinlibrary.dart';
-import 'package:task1/screens/home/offlinehome.dart';
-import 'package:task1/screens/video/onlinevideo.dart';
+import 'package:task1/screens/audio/offlinlibrary.dart';
+import 'package:task1/screens/home/home.dart';
+import 'package:task1/screens/video/offlinevideo.dart';
 
-class Home extends StatelessWidget {
+class OfflineHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +45,7 @@ class Homebody extends StatelessWidget {
                 color: Colors.white30.withOpacity(0.1),
                 child: ListTile(
                   title: Text(
-                    "Stream Music",
+                    "Play Music",
                     style: GoogleFonts.lato(
                       color: Colors.white,
                       fontStyle: FontStyle.italic,
@@ -60,7 +60,7 @@ class Homebody extends StatelessWidget {
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (contex) => Onlinelibrary(),
+                  builder: (contex) => Offlinelibrary(),
                 ),
               ),
             ),
@@ -72,7 +72,7 @@ class Homebody extends StatelessWidget {
                 color: Colors.white30.withOpacity(0.1),
                 child: ListTile(
                   title: Text(
-                    "Stream Video",
+                    "Play Video",
                     style: GoogleFonts.lato(
                       color: Colors.white,
                       fontStyle: FontStyle.italic,
@@ -87,7 +87,7 @@ class Homebody extends StatelessWidget {
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Onlinevideo(),
+                  builder: (context) => Offlinevideo(),
                 ),
               ),
             ),
@@ -96,13 +96,13 @@ class Homebody extends StatelessWidget {
               alignment: Alignment.bottomCenter,
               child: GestureDetector(
                 child: Text(
-                  "Go Offline",
+                  "Go Online",
                   style: GoogleFonts.lato(color: Colors.white),
                 ),
                 onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => OfflineHome(),
+                    builder: (context) => Home(),
                   ),
                 ),
               ),

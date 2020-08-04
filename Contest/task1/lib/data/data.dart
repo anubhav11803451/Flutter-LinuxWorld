@@ -86,3 +86,29 @@ List<Data> datas = [
         'https://raw.githubusercontent.com/anubhav11803451/Flutter-LinuxWorld/task1/Contest/task1/assets/audios/chal.mp3',
   ),
 ];
+
+class Video {
+  final int id;
+  final String title, artist, url, thumb, asset;
+
+  Video({
+    this.id,
+    this.title,
+    this.artist,
+    this.url,
+    this.thumb,
+    this.asset,
+  });
+}
+
+List<Video> videos = [
+  Video(
+    id: 1,
+    title: "Phir Na Milen Kabhi",
+    artist: "Ankit Tiwari",
+    asset: 'assets/videos/hum.mp4',
+    thumb: "assets/images/hum.jpg",
+    url:
+        'https://raw.githubusercontent.com/anubhav11803451/Flutter-LinuxWorld/task1/Contest/task1/assets/videos/hum.mp4',
+  ),
+];

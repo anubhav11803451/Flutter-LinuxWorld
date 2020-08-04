@@ -19,7 +19,7 @@ class Splash extends StatelessWidget {
             Center(
               heightFactor: 4,
               child: CircleAvatar(
-                radius: 35.0,
+                radius: 40.0,
                 backgroundColor: Colors.black,
                 child: Image.asset('assets/icons/wave.png'),
               ),
