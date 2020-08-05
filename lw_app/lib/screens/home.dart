@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lw_app/pages/day8.dart';
+import 'package:lw_app/pages/inputbox.dart';
 
 class MyHomePage extends StatelessWidget {
   AppBar appBar() {
@@ -38,7 +39,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
-      body: Day8(),
+      body: InputBox(),
       // backgroundColor: Color(0xFF15202D),
       backgroundColor: Colors.white,
     );
