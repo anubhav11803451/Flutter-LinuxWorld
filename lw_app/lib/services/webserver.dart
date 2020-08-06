@@ -14,7 +14,7 @@ getperl() async {
 }
 
 getcmd(text) async {
-  var url = 'http://192.168.43.164/cgi-bin/${text}';
+  var url = 'http://192.168.43.164/cgi-bin/$text';
   http.Response response = await http.get(url);
   print(response.body);
 }
