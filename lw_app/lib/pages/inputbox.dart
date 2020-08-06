@@ -15,6 +15,7 @@ class InputBox extends StatelessWidget {
         children: <Widget>[
           TextField(
             controller: textEditingController,
+            //we can use onchanged event here too.
             decoration: InputDecoration(
               border: OutlineInputBorder(),
               labelText: "Type something",
