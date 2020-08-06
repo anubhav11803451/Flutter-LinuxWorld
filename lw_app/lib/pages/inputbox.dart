@@ -32,7 +32,7 @@ class InputBox extends StatelessWidget {
             onPressed: () {
               getcmd(textEditingController.text);
             },
-          )
+          ),
         ],
       ),
     );
