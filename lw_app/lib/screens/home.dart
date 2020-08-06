@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lw_app/pages/day8.dart';
 import 'package:lw_app/pages/inputbox.dart';
 
 class MyHomePage extends StatelessWidget {

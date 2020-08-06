@@ -1,5 +1,6 @@
 import 'package:http/http.dart' as http;
 
+//this will fetch data from local server
 gethtml() async {
   var url = 'http://192.168.43.164/home.html';
   http.Response response = await http.get(url);
