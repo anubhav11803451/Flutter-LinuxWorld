@@ -1,4 +1,5 @@
 import 'package:docker_app/Animations/fade.dart';
+import 'package:docker_app/screens/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,11 +19,19 @@ class Splash extends StatelessWidget {
               child: FadeAnimation(
                 2.2,
                 FlatButton(
-                  onPressed: () {},
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Home(),
+                    ),
+                  ),
                   child: Text(
                     "Let's Begin",
-                    style:
-                        GoogleFonts.lato(color: Colors.white38, fontSize: 18.0),
+                    style: GoogleFonts.lato(
+                      color: Colors.white60,
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.w300,
+                    ),
                   ),
                   color: Colors.black,
                   shape: RoundedRectangleBorder(
@@ -63,7 +72,7 @@ class Splash extends StatelessWidget {
                   Text(
                     "o",
                     style:
-                        GoogleFonts.lato(color: Colors.white30, fontSize: 80),
+                        GoogleFonts.lato(color: Colors.white54, fontSize: 80),
                     // textScaleFactor: 1.2,
                   ),
                 ),
@@ -81,7 +90,7 @@ class Splash extends StatelessWidget {
                   Text(
                     "k",
                     style:
-                        GoogleFonts.lato(color: Colors.white30, fontSize: 80),
+                        GoogleFonts.lato(color: Colors.white54, fontSize: 80),
                     // textScaleFactor: 1.2,
                   ),
                 ),
@@ -99,7 +108,7 @@ class Splash extends StatelessWidget {
                   Text(
                     "t",
                     style:
-                        GoogleFonts.lato(color: Colors.white30, fontSize: 80),
+                        GoogleFonts.lato(color: Colors.white54, fontSize: 80),
                     // textScaleFactor: 1.2,
                   ),
                 ),
