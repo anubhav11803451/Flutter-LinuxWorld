@@ -13,8 +13,10 @@ getperl() async {
   print(response.body);
 }
 
-getcmd(text) async {
-  var url = 'http://192.168.43.164/cgi-bin/$text';
+String result;
+Future getcmd(text) async {
+  var url = 'http://192.168.43.164/cgi-bin/run.py?x=$text';
   http.Response response = await http.get(url);
-  print(response.body);
+  result = response.body;
+  print(result);
 }
