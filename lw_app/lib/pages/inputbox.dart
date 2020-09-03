@@ -33,6 +33,8 @@ class _InputBoxState extends State<InputBox> {
         children: <Widget>[
           TextField(
             controller: textEditingController,
+            autofillHints: [AutofillHints.username],
+
             //we can use onchanged event here too.
             // onChanged: (value) {
             // },
