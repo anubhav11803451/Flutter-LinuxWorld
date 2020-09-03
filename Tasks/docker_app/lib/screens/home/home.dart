@@ -1,4 +1,6 @@
+import 'package:docker_app/controllers/authcontroller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatelessWidget {
@@ -12,6 +14,7 @@ class Home extends StatelessWidget {
 }
 
 class Homebody extends StatelessWidget {
+  final AuthController _authController = Get.put(AuthController());
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -81,46 +84,11 @@ class Homebody extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Expanded(
-                    child: GridView.count(
-                      crossAxisCount: 2,
-                      childAspectRatio: .85,
-                      crossAxisSpacing: 20,
-                      mainAxisSpacing: 20,
-                      children: <Widget>[
-                        Container(
-                          height: 80,
-                          width: 80,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          height: 80,
-                          width: 80,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          height: 80,
-                          width: 80,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          height: 80,
-                          width: 80,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          height: 80,
-                          width: 80,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          height: 80,
-                          width: 80,
-                          color: Colors.white,
-                        ),
-                      ],
-                    ),
-                  ),
+                  FlatButton(
+                      onPressed: () {
+                        _authController.signOut();
+                      },
+                      child: Text("Sign Out"))
                 ],
               ),
             ),

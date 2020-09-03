@@ -1,6 +1,7 @@
 import 'package:docker_app/Animations/fade.dart';
-import 'package:docker_app/screens/home/home.dart';
+import 'package:docker_app/utils/root.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Splash extends StatelessWidget {
@@ -19,12 +20,9 @@ class Splash extends StatelessWidget {
               child: FadeAnimation(
                 2.2,
                 FlatButton(
-                  onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Home(),
-                    ),
-                  ),
+                  onPressed: () {
+                    Get.to(Root());
+                  },
                   child: Text(
                     "Let's Begin",
                     style: GoogleFonts.lato(
