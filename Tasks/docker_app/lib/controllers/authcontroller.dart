@@ -44,6 +44,26 @@ class AuthController extends GetxController {
     }
   }
 
+  void runCommand(String commands, String output) async {
+    try {
+      UserModel _user = UserModel(
+        commands: commands,
+        output: output,
+      );
+      if (await Database().saveCommands(_user)) {
+        Get.find<UserController>().user = _user;
+      }
+    } catch (e) {
+      Get.snackbar(
+        "Error while saving commands",
+        e.message,
+        snackPosition: SnackPosition.BOTTOM,
+        backgroundColor: Colors.white38,
+        overlayBlur: 1,
+      );
+    }
+  }
+
   void login(String email, String password) async {
     try {
       AuthResult _authResult = await _auth.signInWithEmailAndPassword(
