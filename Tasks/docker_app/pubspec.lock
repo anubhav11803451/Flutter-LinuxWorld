@@ -37,7 +37,6 @@ packages:
     source: hosted
     version: "1.1.0-nullsafety.1"
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   cloud_firestore:
     dependency: "direct main"
     description:
@@ -61,8 +60,6 @@ packages:
     version: "0.1.1+2"
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   collection:
     dependency: transitive
     description:
@@ -70,7 +67,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.15.0-nullsafety.3"
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   convert:
     dependency: transitive
@@ -88,8 +84,6 @@ packages:
     version: "2.1.5"
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -104,7 +98,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0-nullsafety.1"
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   file:
     dependency: transitive
@@ -162,8 +155,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.1+2"
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   flutter:
@@ -251,7 +242,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0-nullsafety.1"
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   path_provider:
     dependency: transitive
@@ -353,8 +343,6 @@ packages:
     version: "2.2.1"
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   sky_engine:
     dependency: transitive
     description: flutter
@@ -389,7 +377,6 @@ packages:
     source: hosted
     version: "1.1.0-nullsafety.1"
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   supercharged:
     dependency: transitive
     description:
@@ -404,8 +391,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   term_glyph:
@@ -437,7 +422,6 @@ packages:
     source: hosted
     version: "2.1.0-nullsafety.3"
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   xdg_directories:
     dependency: transitive
     description:
@@ -448,10 +432,6 @@ packages:
 sdks:
   dart: ">=2.10.0-110 <2.11.0"
   flutter: ">=1.17.0 <2.0.0"
-=======
-sdks:
-  dart: ">=2.10.0-110 <2.11.0"
->>>>>>> Stashed changes
 =======
 sdks:
   dart: ">=2.10.0-110 <2.11.0"
