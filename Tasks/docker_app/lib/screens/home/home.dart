@@ -1,9 +1,7 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:docker_app/controllers/authcontroller.dart';
 import 'package:docker_app/controllers/usercontroller.dart';
 import 'package:docker_app/services/database.dart';
 import 'package:docker_app/widgets/inputbox.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
